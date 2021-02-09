@@ -1,0 +1,14 @@
+CHIP Or2 {
+ IN a, b;
+    OUT out;
+
+    PARTS:
+    // Put your code here:
+
+// gfountis sun oct 19
+    Not(in=a,out=v1);
+    Not(in=b,out=v2);
+//      And(a=v1,b=v2,out=v3);
+//      Not(in=v3,out=out);
+    Nand(a=v1,b=v2,out=out);
+}
